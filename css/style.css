@@ -20,14 +20,27 @@ textarea{
   border-radius: 0;
   border-bottom: 10px solid black;
 }
-
-
-
-.description{
-  white-space: pre-wrap;
+ 
+/* added column styles */
+.column{
+  float: left;
+  padding: 10px;
 }
 
-.time-block{
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.description{
+  /*white-space: pre-wrap;*/
+  /*padding-left: 100px;*/
+  width:60%;
+}
+
+.time-block, .save{
+  width:20%;
   text-align: center;
   border-radius: 15px;
 }
@@ -37,6 +50,8 @@ textarea{
   height: 80px;
   border-top: 1px solid white;;
 }
+
+
 
 .hour {
   background-color: #ffffff;
